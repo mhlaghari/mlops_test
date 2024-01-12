@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Wine Quality | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Kaggle is the world&#x2019;s largest data science community with powerful tools and resources to help you achieve your data science goals." />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="earth and nature,classification,alcohol,regression" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1705057470225;
+    window["pageRequestEndTime"] = 1705057470331;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/rajyellow46/wine-quality" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=09b6fda5bb0232bdcd42" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=f76cbed01d6734423e71" />
+  
+    
+ 
+      <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/rajyellow46/wine-quality" />
+    <meta property="og:title" content="Wine Quality" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-82.png-1386728/dataset-card.png" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Wine Quality","description":"**Data Set Information:**\n\nThe dataset was downloaded from the UCI Machine Learning Repository. \n\nThe two datasets are related to red and white variants of the Portuguese \"Vinho Verde\" wine. The reference [Cortez et al., 2009]. Due to privacy and logistic issues, only physicochemical (inputs) and sensory (the output) variables are available (e.g. there is no data about grape types, wine brand, wine selling price, etc.). \n\nThese datasets can be viewed as classification or regression tasks. The classes are ordered and not balanced (e.g. there are munch more normal wines than excellent or poor ones). Outlier detection algorithms could be used to detect the few excellent or poor wines. Also, we are not sure if all input variables are relevant. So it could be interesting to test feature selection methods. \n\nTwo datasets were combined and few values were randomly removed.\n\n**Attribute Information:**\n\nFor more information, read [Cortez et al., 2009]. \nInput variables (based on physicochemical tests): \n1 - fixed acidity \n2 - volatile acidity \n3 - citric acid \n4 - residual sugar \n5 - chlorides \n6 - free sulfur dioxide \n7 - total sulfur dioxide \n8 - density \n9 - pH \n10 - sulphates \n11 - alcohol \nOutput variable (based on sensory data): \n12 - quality (score between 0 and 10)\n\n**Acknowledgements:**\n\nP. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. \nModeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.","url":"https://www.kaggle.com/rajyellow46/wine-quality","version":1,"keywords":["subject, earth and nature","task, classification","subject, health and fitness, food, alcohol","task, regression"],"license":{"@type":"CreativeWork","name":"Other (specified in description)","url":""},"identifier":["35901"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Raj Parmar","url":"https://www.kaggle.com/rajyellow46","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1386728-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/rajyellow46/wine-quality/download?datasetVersionNumber=1","contentSize":"100356 bytes"}],"commentCount":3,"dateModified":"2018-07-09T16:08:15.817Z","discussionUrl":"https://www.kaggle.com/rajyellow46/wine-quality/discussion","alternateName":"","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-82.png-1386728/dataset-card.png","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":3},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":36361},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":228840},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":244}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" src="/static/assets/runtime.js?v=d06753e8b1cbef7f8d1e" data-turbolinks-track="reload"></script>
+  <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" src="/static/assets/vendor.js?v=da61efe97fdaa3212fde" data-turbolinks-track="reload"></script>
+  <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" src="/static/assets/app.js?v=8981f3b260dde20feea1" data-turbolinks-track="reload"></script>
+    <script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+
+<script nonce="tqUPQ1IRsCUdmsoLGpi1mQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="tqUPQ1IRsCUdmsoLGpi1mQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
