@@ -4,6 +4,8 @@ from mlProject_test import logger
 from mlProject_test.utils.common import get_size
 import zipfile
 import opendatasets as od
+from mlProject_test.entity.config_entity import DataIngestionConfig
+from pathlib import Path
 
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):
